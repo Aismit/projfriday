@@ -12,9 +12,16 @@
 		3B22F6E121A8056800D33244 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B22F6DF21A8056800D33244 /* Main.storyboard */; };
 		3B22F6E321A8056A00D33244 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B22F6E221A8056A00D33244 /* Assets.xcassets */; };
 		3B22F6E621A8056A00D33244 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B22F6E421A8056A00D33244 /* LaunchScreen.storyboard */; };
+		3B22F6EE21A807D200D33244 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B22F6ED21A807D200D33244 /* CustomCell.swift */; };
+		3B22F6F021A807F900D33244 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B22F6EF21A807F900D33244 /* GoogleService-Info.plist */; };
+		3B22F6F221A80B1200D33244 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B22F6F121A80B1200D33244 /* LogInViewController.swift */; };
+		3B22F6F421A80B3D00D33244 /* MakeProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B22F6F321A80B3D00D33244 /* MakeProfileViewController.swift */; };
+		3B22F6F621A8AF8700D33244 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B22F6F521A8AF8600D33244 /* CalendarViewController.swift */; };
+		A05000E0C5FFA42858219F9A /* Pods_friday.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C53753A1B669AC9D4E4C848F /* Pods_friday.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1ECE06DC1AB6D8AC1DA2B6B6 /* Pods-friday.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-friday.release.xcconfig"; path = "Pods/Target Support Files/Pods-friday/Pods-friday.release.xcconfig"; sourceTree = "<group>"; };
 		3B22F6D821A8056800D33244 /* friday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = friday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B22F6DB21A8056800D33244 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B22F6DD21A8056800D33244 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,13 @@
 		3B22F6E221A8056A00D33244 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B22F6E521A8056A00D33244 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B22F6E721A8056A00D33244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B22F6ED21A807D200D33244 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		3B22F6EF21A807F900D33244 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3B22F6F121A80B1200D33244 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		3B22F6F321A80B3D00D33244 /* MakeProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeProfileViewController.swift; sourceTree = "<group>"; };
+		3B22F6F521A8AF8600D33244 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		C53753A1B669AC9D4E4C848F /* Pods_friday.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_friday.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F663F96A6AFCE1E021BB25C2 /* Pods-friday.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-friday.debug.xcconfig"; path = "Pods/Target Support Files/Pods-friday/Pods-friday.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +43,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A05000E0C5FFA42858219F9A /* Pods_friday.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22BC6CEB22E53B5F579CDA2E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F663F96A6AFCE1E021BB25C2 /* Pods-friday.debug.xcconfig */,
+				1ECE06DC1AB6D8AC1DA2B6B6 /* Pods-friday.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		3B22F6CF21A8056700D33244 = {
 			isa = PBXGroup;
 			children = (
 				3B22F6DA21A8056800D33244 /* friday */,
 				3B22F6D921A8056800D33244 /* Products */,
+				22BC6CEB22E53B5F579CDA2E /* Pods */,
+				DEA22AE1720E937B082487CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +82,25 @@
 			children = (
 				3B22F6DB21A8056800D33244 /* AppDelegate.swift */,
 				3B22F6DD21A8056800D33244 /* ViewController.swift */,
+				3B22F6F521A8AF8600D33244 /* CalendarViewController.swift */,
+				3B22F6ED21A807D200D33244 /* CustomCell.swift */,
+				3B22F6F121A80B1200D33244 /* LogInViewController.swift */,
+				3B22F6F321A80B3D00D33244 /* MakeProfileViewController.swift */,
 				3B22F6DF21A8056800D33244 /* Main.storyboard */,
 				3B22F6E221A8056A00D33244 /* Assets.xcassets */,
 				3B22F6E421A8056A00D33244 /* LaunchScreen.storyboard */,
 				3B22F6E721A8056A00D33244 /* Info.plist */,
+				3B22F6EF21A807F900D33244 /* GoogleService-Info.plist */,
 			);
 			path = friday;
+			sourceTree = "<group>";
+		};
+		DEA22AE1720E937B082487CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C53753A1B669AC9D4E4C848F /* Pods_friday.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B22F6EA21A8056A00D33244 /* Build configuration list for PBXNativeTarget "friday" */;
 			buildPhases = (
+				B60B6791FBE4EAFC01D57657 /* [CP] Check Pods Manifest.lock */,
 				3B22F6D421A8056700D33244 /* Sources */,
 				3B22F6D521A8056700D33244 /* Frameworks */,
 				3B22F6D621A8056700D33244 /* Resources */,
+				963F1DCF9F21671411131CB5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B22F6E621A8056A00D33244 /* LaunchScreen.storyboard in Resources */,
+				3B22F6F021A807F900D33244 /* GoogleService-Info.plist in Resources */,
 				3B22F6E321A8056A00D33244 /* Assets.xcassets in Resources */,
 				3B22F6E121A8056800D33244 /* Main.storyboard in Resources */,
 			);
@@ -130,12 +172,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		963F1DCF9F21671411131CB5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-friday/Pods-friday-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTAppleCalendar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-friday/Pods-friday-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B60B6791FBE4EAFC01D57657 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-friday-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3B22F6D421A8056700D33244 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B22F6F621A8AF8700D33244 /* CalendarViewController.swift in Sources */,
+				3B22F6F221A80B1200D33244 /* LogInViewController.swift in Sources */,
 				3B22F6DE21A8056800D33244 /* ViewController.swift in Sources */,
+				3B22F6F421A80B3D00D33244 /* MakeProfileViewController.swift in Sources */,
+				3B22F6EE21A807D200D33244 /* CustomCell.swift in Sources */,
 				3B22F6DC21A8056800D33244 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +377,7 @@
 		};
 		3B22F6EB21A8056A00D33244 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F663F96A6AFCE1E021BB25C2 /* Pods-friday.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +395,7 @@
 		};
 		3B22F6EC21A8056A00D33244 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1ECE06DC1AB6D8AC1DA2B6B6 /* Pods-friday.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
