@@ -8,4 +8,10 @@ target 'friday' do
   pod 'JTAppleCalendar', '~> 7.0'
   # Pods for friday
   pod 'Firebase/Core'
+pod 'FirebaseAuth'
+pod 'FirebaseStorage'
+pod 'SDWebImage'
+pod 'MBProgressHUD'
+pod 'SDWebImage'
+pod 'FirebaseDatabase'
 end
