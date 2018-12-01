@@ -12,17 +12,33 @@ import os.log
 
 class CalendarViewController: UIViewController {
     
+    
+//    let btnImage = UIImage(named: "slider")
+//    btnTwo.setImage(btnImage , for: UIControlState.normal)
+
+    
     let formatter = DateFormatter()
     
     
     @IBOutlet weak var calendarView: JTAppleCalendarView!
     @IBOutlet weak var month: UILabel!
     @IBOutlet weak var year: UILabel!
+    @IBOutlet weak var addEventButton: UIImageView!
     
     let outsideMonthColor = UIColor(colorWithHexValue:0x584A66)
     let monthColor = UIColor.white
     let selectedMonthColor = UIColor(colorWithHexValue: 0x3a294b)
     let currentDateSelectedViewColor = UIColor(colorWithHexValue: 0x433f5d)
+    
+    struct JTCalendarEvent {
+        var title = ""
+        var start = Date()
+        var end = Date()
+    }
+    
+    func scheduleEvent(Event: JTCalendarEvent) {
+        
+    }
     
     
     func handleCelltextColor(view: JTAppleCell?, cellState: CellState) {
@@ -53,6 +69,9 @@ class CalendarViewController: UIViewController {
         super.viewDidLoad()
         calendarView.calendarDataSource = self
         calendarView.calendarDelegate = self
+
+//        let imageView = UIImageView(image: #imageLiteral(resourceName: "add_event_button"))
+//        view.addSubview(imageView)
         
         setupCalendarView()
         // Do any additional setup after loading the view.
@@ -96,6 +115,7 @@ class CalendarViewController: UIViewController {
 
 extension CalendarViewController: JTAppleCalendarViewDataSource {
 
+
     
     func configureCalendar(_ calendar: JTAppleCalendarView) -> ConfigurationParameters {
         let formatter = DateFormatter()
@@ -103,8 +123,8 @@ extension CalendarViewController: JTAppleCalendarViewDataSource {
         formatter.timeZone = Calendar.current.timeZone
         formatter.locale = Calendar.current.locale
         
-        let startDate = formatter.date(from: "2017 01 01")!
-        let endDate = formatter.date(from: "2017 12 31")!
+        let startDate = formatter.date(from: "2018 11 01")!
+        let endDate = formatter.date(from: "2019 12 31")!
         
         let parameters = ConfigurationParameters(startDate: startDate, endDate: endDate)
         return parameters
